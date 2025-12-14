@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@herajs/client": "^2.1.2",
+    "@herajs/crypto": "^2.1.2",
+    "axios": "^1.9.0"
+  }
+}
