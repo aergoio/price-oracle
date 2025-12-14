@@ -34,6 +34,7 @@ nodes/          # Off-chain price fetching nodes (Node.js)
 Example of converting a price in USD to AERGO:
 
 ```lua
+  local price_in_usd = "1.23 USD"  -- or stored on contract state
   local oracle_fee = contract.call(price_oracle_address, "get_current_service_fee")
   local price_in_aergo = contract.call.value(oracle_fee)(price_oracle_address, "get_price_in_aergo", price_in_usd)
 ```
